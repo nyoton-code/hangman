@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman</title>
+    <link rel="stylesheet" href="Hangman.css" />
+  </head>
+  <body>
+    <div class="info">
+      <span> Hangman</span>
+      <span>word from : <span style="color: rgb(147, 67, 67)">FCB</span></span>
+    </div>
+    <div class="guess">
+      <div class="hangman">
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+        <span class="four"></span>
+        <span class="five"> </span>
+        <span class="six"></span>
+        <span class="seven"> </span>
+        <span class="eight">
+          <span></span>
+          <span></span>
+        </span>
+        <span class="nine">
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+      <div class="letters"></div>
+    </div>
+    <div class="result"></div>
+    <div>
+      <audio class="win">
+        <source
+          src="sounsd-effets/Winning Sound Effect.mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+      <audio class="lose">
+        <source src="sounsd-effets/Lose sound effects.mp3" />
+      </audio>
+      <audio class="correct">
+        <source src="sounsd-effets/Correct Answer Sound Effect.mp3" />
+      </audio>
+      <audio class="wrong">
+        <source src="sounsd-effets/WRONG ANSWER SOUND EFFECT.mp3" />
+      </audio>
+      <!-- controls autoplay loop muted -->
+    </div>
+    <script src="Hangman.js"></script>
+  </body>
+</html>
